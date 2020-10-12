@@ -9,7 +9,7 @@ mod conditionals;
 mod loops;
 mod functions;
 mod pointers_ref;
-
+mod structs;
 
 fn main() {
 
@@ -52,4 +52,7 @@ fn main() {
 
     println!("---------- Pointers_ref --------------------------------------");
     pointers_ref::run(); 
+
+    println!("---------- Structs --------------------------------------");
+    structs::run();     
 }
