@@ -8,6 +8,8 @@ mod vectors;
 mod conditionals;
 mod loops;
 mod functions;
+mod pointers_ref;
+
 
 fn main() {
 
@@ -48,4 +50,6 @@ fn main() {
     println!("---------- Functions --------------------------------------");
     functions::run(); 
 
+    println!("---------- Pointers_ref --------------------------------------");
+    pointers_ref::run(); 
 }
