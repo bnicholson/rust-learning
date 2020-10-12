@@ -10,6 +10,7 @@ mod loops;
 mod functions;
 mod pointers_ref;
 mod structs;
+mod enums;
 
 fn main() {
 
@@ -54,6 +55,8 @@ fn main() {
     pointers_ref::run(); 
 
     println!("---------- Structs --------------------------------------");
-    structs::run();     
+    structs::run();   
 
+    println!("---------- enums --------------------------------------");
+    enums::run();   
 }
