@@ -36,6 +36,13 @@ impl Person {
     }
 }
 
+impl Person {
+    // return a tuple
+    fn to_tuple(self) -> (String,String) {
+        (self.first_name,self.last_name)
+    }
+}
+
 pub fn run() {
     let mut c = Color {
         red: 255,
@@ -62,6 +69,7 @@ pub fn run() {
     let mut md = Person::new("Mary","Doe");
     md.set_last_name("Smith");
     println!("Mary Doe's now {}",md.full_name());
+    println!("Mary Smith's Tuple = {:?} ",md.to_tuple());
 
 
 }
